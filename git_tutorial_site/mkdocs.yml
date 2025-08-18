@@ -1,0 +1,26 @@
+site_name: Git  Notes
+site_description: My organized notes for Git
+theme:
+  name: material
+  palette:
+    primary: brown
+    accent: grey
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Git Basics: basics.md
+  - Branching: branching.md
+  - Merging: merging.md
+  - Remotes: remotes.md
+  - How-Tos:
+      - Cloning: how-tos/cloning.md
+      - Resetting: how-tos/resetting.md
+  - Examples:
+      - Example 1: examples/example1.md
+      - Example 2: examples/example2.md
+  - Solutions:
+      - Solution 1: solutions/solution1.md
+      - Solution 2: solutions/solution2.md
