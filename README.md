@@ -2,8 +2,6 @@
 
 This website contains notes I have compiled as a personal reference for Git and GitHub concepts, workflows, and best practices. It is designed to be an organized, easy-to-navigate collection that anyone can use to understand version control and collaboration.
 
-/_You can access the website directly at: [https://JamishaBade.github.io/git-tutorial/](https://JamishaBade.github.io/git-tutorial/)_/
-
 ## Features
 
 - Clear and concise explanations of Git and GitHub concepts.
