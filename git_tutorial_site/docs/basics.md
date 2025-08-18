@@ -81,6 +81,8 @@ git add .
 
 ## git status
 
+To check the status of git:
+
 ```bash
 git status
 ```
