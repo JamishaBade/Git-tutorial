@@ -20,6 +20,8 @@ git reset --soft commitHash
 git reset --mixed commitHash
 ```
 
+! This is very risky command
+
 ```bash
 # deletes the file
 git reset --hard commitHash
