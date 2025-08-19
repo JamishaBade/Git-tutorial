@@ -54,13 +54,27 @@ Stages changes from working directory to staging area
 
 ### Advanced Usage
 
+Add a part of file to the staged area.
+
+#### Interactive add (choose hunks)
+
 ```bash
-# Interactive add (choose hunks)
 git add -p
+```
 
-# Add all tracked files (not new files)
+#### Add all tracked files (not new files)
+
+```bash
 git add -u
+```
 
+#### Add all tracked and untracked files
+
+```bash
+git add -A
+```
+
+```bash
 # Add by file pattern
 git add '*.js'
 ```
@@ -106,3 +120,31 @@ git commit -m "Title" -m "Description"
 ---
 
 ## git push
+
+## Advanced Techniques
+
+```bash
+# Push specific branch
+git push origin branch-name
+
+# Set upstream branch
+git push -u origin branch-name
+
+# Force push (use with caution)
+git push --force
+```
+
+## Protocols and Internals
+
+- Can use HTTPS, SSH, or Git protocol
+- Underlying transfer uses packfiles for efficiency
+- Uses the "smart" protocol for modern servers
+
+## Push Rejection Scenarios
+
+1. **Non-fast-forward**: Remote has commits you don't have locally
+   - Solution: `git pull` first to merge changes
+2. **Permission denied**: Authentication issues
+   - Solution: Check SSH keys or credentials
+3. **Shallow update not allowed**: Pushing from shallow clone
+   - Solution: Perform full clone
