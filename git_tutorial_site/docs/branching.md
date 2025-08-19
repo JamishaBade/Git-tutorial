@@ -36,3 +36,14 @@ Notes: both the main and jamisha branch are in the same head. Hence, they are sy
 # create a local branch
 git checkout branchname
 ```
+
+now since we are in another branch named jamisha. If we commit changes then it wont commit to any other branches.
+
+main is one commit away from jamisha branch. They are not syncing
+![Git Workflow](images/branchAsync.png)
+
+- delete branches
+
+```bash
+git branch -d branchname
+```
