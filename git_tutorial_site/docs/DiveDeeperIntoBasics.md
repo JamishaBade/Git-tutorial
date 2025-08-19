@@ -121,7 +121,7 @@ git commit -m "Title" -m "Description"
 
 ## git push
 
-## Advanced Techniques
+### Advanced Techniques
 
 ```bash
 # Push specific branch
@@ -134,13 +134,13 @@ git push -u origin branch-name
 git push --force
 ```
 
-## Protocols and Internals
+### Protocols and Internals
 
 - Can use HTTPS, SSH, or Git protocol
 - Underlying transfer uses packfiles for efficiency
 - Uses the "smart" protocol for modern servers
 
-## Push Rejection Scenarios
+### Push Rejection Scenarios
 
 1. **Non-fast-forward**: Remote has commits you don't have locally
    - Solution: `git pull` first to merge changes
@@ -148,3 +148,11 @@ git push --force
    - Solution: Check SSH keys or credentials
 3. **Shallow update not allowed**: Pushing from shallow clone
    - Solution: Perform full clone
+
+## Summary
+
+- Head is the pointer to the latest commit.
+- You can change head.
+- Every next commit points to the previous commit. It creates a linked list of commits.
+
+![Git Workflow](images/gitbasics.jpeg)
