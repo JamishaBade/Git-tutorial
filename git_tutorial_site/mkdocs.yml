@@ -11,7 +11,9 @@ theme:
 
 nav:
   - Home: index.md
-  - Git Basics: basics.md
+  - Git Basics:
+      - Introduction: Introduction.md
+      - DiveDeeper: DiveDeeperIntoBasics.md
   - Branching: branching.md
   - Merging: merging.md
   - Remotes: remotes.md

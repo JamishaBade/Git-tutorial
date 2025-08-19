@@ -1,4 +1,4 @@
-# Git Basics
+# Git Introduction
 
 ## What is Git?
 
@@ -36,16 +36,39 @@ git config --global user.email "youremail@example.com"
 
 follow along step by step:
 
-1. Create a folder called `git_module`
-2. Create a subfolder called `first_app`
-3. Open your terminal and change directory `cd first_app`
-4. `ls -l`: lists the files in the directory
-5. `nano file1.txt`: creates a new file in the directory
-6. In the text editor, write some texts
-7. `Ctrl+X` and press Y
+1. Create a folder/ directory called `git_module`
 
-8. `git init`
-   :This creates a hidden .git folder, which tracks changes in this project.
+```bash
+mkdir git_module
+cd git_module
+```
+
+2. Create a subfolder called `first_app`
+
+```bash
+mkdir first_app
+cd first_app
+```
+
+3. list files in the directory
+
+```bash
+  ls -l
+```
+
+4. Create a new file in the directory.
+
+```bash
+ nano file1.txt
+```
+
+6. In the text editor, write some texts 7. `Ctrl+X` and press Y
+
+7. Initialize your git repository
+
+```bash
+git init
+```
 
 ---
 
@@ -61,7 +84,11 @@ Untracked files aren’t included in commits, and Git won’t keep a history of 
 
 If an untracked file is deleted before being added, Git cannot recover it.
 
-Tip: Always use git status to see which files are untracked, modified, or staged for commit as they appear in red font colors.
+Tip: Always use git status to see which files are untracked, modified, or staged for commit.
+
+### Untracked files are in red:
+
+![Git Workflow](images/untrackedFile.png)
 
 ## Adding git files
 
@@ -79,7 +106,7 @@ If you have mutilple untracked files, then you can track it all at once.
 git add .
 ```
 
-## git status
+## Git Status
 
 To check the status of git:
 
@@ -87,5 +114,52 @@ To check the status of git:
 git status
 ```
 
+![Git Workflow](images/trackedFile.png)
+
 <span style="color:green">Files that Git already knows about. If changes are staged for commit, they appear in green..</span> </br>
 <span style="color:red">New files Git doesn’t know about yet. These appear in red.</span>
+
+## commit changes
+
+Commits the staged changes to the repository.
+It basically snapshots your repo at a specific point. In other words, it is recording the changes in the repo.
+
+```bash
+git commit
+```
+
+This opens a text editor to type your commit.
+
+1. Press I to enable Insert.
+2. Type your commit message.
+3. Press Escape key.
+4. type `:wq` and press Enter.
+
+---
+
+If you are smart then just do: (Quick Commit)
+
+```bash
+git commit -m "your commit message"
+```
+
+## commit history
+
+View your commit history.
+
+```bash
+git log
+```
+
+This will display commit hash, Author, Date and Commit message.
+
+## Summary
+
+1. Create a local repo: `git init`
+
+2. When we create a new file in the repo, git is unaware of it.
+3. `git add filename.extension`
+4. Now git is in staging area and git is aware of the file.
+5. `git commit -m "commit message"`
+6. `git status`
+7. `git log`
