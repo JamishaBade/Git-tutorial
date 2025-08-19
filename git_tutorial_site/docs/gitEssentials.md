@@ -19,3 +19,8 @@ git reset --soft commitHash
 # bring the file to unstaging area
 git reset --mixed commitHash
 ```
+
+```bash
+# deletes the file
+git reset --hard commitHash
+```
