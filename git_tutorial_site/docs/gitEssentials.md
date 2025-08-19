@@ -19,6 +19,7 @@ git reset --soft commitHash
 # bring the file to unstaging area
 git reset --mixed commitHash
 ```
+<<<<<<< HEAD
 
 ! This is very risky command
 
@@ -26,3 +27,5 @@ git reset --mixed commitHash
 # deletes the file
 git reset --hard commitHash
 ```
+=======
+>>>>>>> parent of 418ad1c (first commit)
