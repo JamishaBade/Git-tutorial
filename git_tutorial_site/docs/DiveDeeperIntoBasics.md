@@ -164,6 +164,8 @@ Gives last 2 commits
 git log -n 2
 ```
 
+Gives diff layout of commit status:
+
 ```bash
 git log --pretty= short
 ```
@@ -173,6 +175,40 @@ git log --pretty= full
 ```
 
 ```bash
+git log --pretty= fuller
+```
+
+```bash
+git log --pretty= oneline
+```
+
+```bash
+ git log --pretty=form
+at:"%h"
+```
+
+```bash
+# prints commit id
+ git log --pretty=format: "%h"
+```
+
+```bash
+# prints commit id and commit message
+ git log --pretty=format: "%h %s "
+```
+
+```bash
+#prints the commit from a week ago
+git log --since="1 week ago"
+```
+
+```bash
+#prints the commit within an interval
+git log --since="02/19/2024" --until="05/20/2025"
+```
+
+```bash
+# shows you the commit history with the patch diff included
 git log -p
 ```
 

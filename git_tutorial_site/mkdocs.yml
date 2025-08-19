@@ -14,6 +14,7 @@ nav:
   - Git Basics:
       - Introduction: Introduction.md
       - DiveDeeper: DiveDeeperIntoBasics.md
+      - Git Essentials: gitEssentials.md
   - Branching: branching.md
   - Merging: merging.md
   - Remotes: remotes.md
