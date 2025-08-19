@@ -19,13 +19,25 @@ git reset --soft commitHash
 # bring the file to unstaging area
 git reset --mixed commitHash
 ```
-<<<<<<< HEAD
-
-! This is very risky command
 
 ```bash
-# deletes the file
+# deletes the file. DANGEROUSS
 git reset --hard commitHash
 ```
-=======
->>>>>>> parent of 418ad1c (first commit)
+
+# git revert
+
+```bash
+git revert commitHash
+```
+
+### Soo, what is the difference between `git revert` and `git reset --hard`
+
+- `git revert`- undos safely, creates a new commit
+  you can recheck the old content using
+  `git checkout hash`
+
+---
+
+- `git reset --hard` - deletes history, dangerous
+  you cannot recheck teh old content ones deleted `:(`

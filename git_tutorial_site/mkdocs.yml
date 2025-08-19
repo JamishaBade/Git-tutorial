@@ -14,8 +14,9 @@ nav:
   - Git Basics:
       - Introduction: Introduction.md
       - DiveDeeper: DiveDeeperIntoBasics.md
-      - Git Essentials: gitEssentials.md
-  - Branching: branching.md
+      - Git Essentials- reset, revert: gitEssentials.md
+  - Branches:
+      - Intro to Branching: branching.md
   - Merging: merging.md
   - Remotes: remotes.md
   - How-Tos:
