@@ -17,7 +17,7 @@ nav:
       - Git Essentials- reset, revert: gitEssentials.md
   - Branches:
       - Intro to Branching: branching.md
-      - Branch Digram: branchDiagram.md
+      - Branches In Depth: branchDiagram.md
   - Merging: merging.md
   - Remotes: remotes.md
   - How-Tos:
