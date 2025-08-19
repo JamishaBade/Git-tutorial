@@ -21,5 +21,3 @@ git merge feature1     # Merge changes from feature1 into main
 - If conflicts exist, Git will prompt you to resolve them manually.
 
 ---
-
-If you want, I can also make a **small visual diagram** showing how `git merge` works between branches for your notes—it helps a lot for beginners. Do you want me to do that?
