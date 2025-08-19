@@ -104,11 +104,18 @@ Creates a commit object containing:
 # Amend previous commit
 git commit --amend
 
+# Amend previous commit with no commit message
+git commit --amend --no-edit
+
 # Sign commit cryptographically
 git commit -S
 
 # Commit with multiline message
 git commit -m "Title" -m "Description"
+
+# Commit with no changes (run pipeline)
+git commit --allow-empty -m "dummy"
+
 ```
 
 ### Technical Details
@@ -148,6 +155,22 @@ git push --force
    - Solution: Check SSH keys or credentials
 3. **Shallow update not allowed**: Pushing from shallow clone
    - Solution: Perform full clone
+
+## git log
+
+Gives last 2 commits
+
+```bash
+git log -n 2
+```
+
+```bash
+git log --pretty= short
+```
+
+```bash
+git log --pretty= full
+```
 
 ## Summary
 
