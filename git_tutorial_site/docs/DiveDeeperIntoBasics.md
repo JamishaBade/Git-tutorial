@@ -172,6 +172,10 @@ git log --pretty= short
 git log --pretty= full
 ```
 
+```bash
+git log -p
+```
+
 ## Summary
 
 - Head is the pointer to the latest commit.
