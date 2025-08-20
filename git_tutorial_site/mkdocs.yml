@@ -18,6 +18,8 @@ nav:
   - Branches:
       - Intro to Branching: branching.md
       - Branches In Depth: branchDiagram.md
-  - Merging: merging.md
+  - Merging:
+      - Intro to Merging: merging.md
+      - Resolving Merge conflicts: mergeConflict.md
   - Remotes: remotes.md
   - Rebasing: rebasing.md

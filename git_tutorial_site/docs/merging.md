@@ -31,3 +31,22 @@ git merge feature1     # Merge changes from feature1 into main
 - If both branches changed the same part of a file, Git will ask you to resolve a merge conflict.
 
 ---
+
+# git scenario
+
+![Git Workflow](images/Merge.jpeg)
+
+Explanation:
+The master branch is split into two branches at commit 3: feature1 and feature2.
+
+- feature1 adds a new commit, F1.
+
+- feature2 adds a new commit, F2.
+
+At this point, the branches have diverged and are not in sync.
+
+When we merge master with feature1, both master and feature1 point to F1, so they are now in sync.
+
+If we then try to merge master with feature2, Git detects a conflict because feature1’s changes are not in feature2.
+
+To resolve this, Git creates a new merge commit that combines the changes from both feature1 and feature2, ensuring that all files from both branches are preserved.
