@@ -20,6 +20,7 @@ nav:
       - Branches In Depth: branchDiagram.md
   - Merging:
       - Intro to Merging: merging.md
-      - Resolving Merge conflicts: mergeConflict.md
+      - Resolving Merge conflicts: mergeConflicts.md
+  - Cherry Pick:
   - Remotes: remotes.md
   - Rebasing: rebasing.md

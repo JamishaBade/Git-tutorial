@@ -32,7 +32,7 @@ git merge feature1     # Merge changes from feature1 into main
 
 ---
 
-# git scenario
+## Important git scenario
 
 ![Git Workflow](images/Merge.jpeg)
 
@@ -50,3 +50,22 @@ When we merge master with feature1, both master and feature1 point to F1, so the
 If we then try to merge master with feature2, Git detects a conflict because feature1’s changes are not in feature2.
 
 To resolve this, Git creates a new merge commit that combines the changes from both feature1 and feature2, ensuring that all files from both branches are preserved.
+
+## Summary
+
+Git branches share a common ancestor (the commit where they split).
+
+When you merge, Git replays the changes made on one branch into the other.
+
+The branch you merge into will now have:
+
+Its own commits/files, plus
+
+The new commits/files from the other branch.
+
+The branch you merged from does not change.
+So, after git merge branch2 while on branch1:
+
+- branch1 = has everything from branch1 + branch2.
+
+- branch2 = stays the same.
