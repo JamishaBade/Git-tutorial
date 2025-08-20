@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../branching/">
       
       
-        <link rel="next" href="../DiveDeeperIntoBasics/">
+        <link rel="next" href="../merging/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Introduction - Git  Notes</title>
+        <title>Branches In Depth - Git  Notes</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git-introduction" class="md-skip">
+        <a href="#the-core-purpose-of-branching" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Branches In Depth
             
           </span>
         </div>
@@ -223,20 +223,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -252,7 +250,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Git Basics
@@ -263,32 +261,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
         
   
   
@@ -299,146 +275,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Git?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Git Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#on-macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      On macOS
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-personal-info-to-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Personal Info to Git
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spoonfeed-git-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spoonfeed git changes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Spoonfeed git changes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#untracked-files-are-in-red" class="md-nav__link">
-    <span class="md-ellipsis">
-      Untracked files are in red:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-git-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding git files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Status
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit changes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-history" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit history
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -501,18 +337,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -528,7 +366,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Branches
@@ -562,10 +400,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../branchDiagram/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -576,6 +423,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -925,134 +773,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Git?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Git Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#on-macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      On macOS
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-personal-info-to-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Personal Info to Git
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spoonfeed-git-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spoonfeed git changes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Spoonfeed git changes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#untracked-files-are-in-red" class="md-nav__link">
-    <span class="md-ellipsis">
-      Untracked files are in red:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-git-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding git files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Status
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit changes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-history" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit history
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1067,117 +787,28 @@
 
 
 
-<h1 id="git-introduction">Git Introduction</h1>
-<h2 id="what-is-git">What is Git?</h2>
-<p>Git is a distributed version control system. It helps to track changes in files, typically source code. It allows to collaborate with group of people without overwriting eachother's work.</p>
-<h2 id="git-installation">Git Installation</h2>
-<h3 id="on-macos">On macOS</h3>
-<p>Git comes bundled with the <strong>Command Line Tools for Xcode</strong>. To check if it’s installed, open Terminal and type:</p>
-<pre><code class="language-bash">git --version
-</code></pre>
-<p>or</p>
-<pre><code class="language-bash">git -v
-</code></pre>
-<h2 id="setting-personal-info-to-git">Setting Personal Info to Git</h2>
-<p>Git requires you to set your name and email before you start committing changes. This information is stored in your commits.</p>
-<pre><code class="language-bash">git config --global user.name &quot;yourusername&quot;
-</code></pre>
-<pre><code class="language-bash">git config --global user.email &quot;youremail@example.com&quot;
-</code></pre>
-<h2 id="basic-commands">Basic Commands</h2>
-<p>follow along step by step:</p>
-<ol>
-<li>Create a folder/ directory called <code>git_module</code></li>
-</ol>
-<pre><code class="language-bash">mkdir git_module
-cd git_module
-</code></pre>
-<ol>
-<li>Create a subfolder called <code>first_app</code></li>
-</ol>
-<pre><code class="language-bash">mkdir first_app
-cd first_app
-</code></pre>
-<ol>
-<li>list files in the directory</li>
-</ol>
-<pre><code class="language-bash">  ls -l
-</code></pre>
-<ol>
-<li>Create a new file in the directory.</li>
-</ol>
-<pre><code class="language-bash"> nano file1.txt
-</code></pre>
-<ol>
+<h1 id="the-core-purpose-of-branching">The Core Purpose of Branching</h1>
+<ul>
+<li>Parallel Development: This is the fundamental concept. Branches allow multiple features (e.g., a new UI, a backend optimization, a bug fix) to be developed concurrently by different individuals or teams. Without branching, developers would be constantly stepping on each other's code.</li>
+<li>Context Switching and Experimentation: A branch is a safe sandbox. You can try a radical new algorithm or refactor a module. If it doesn't work, you simply discard the branch (git branch -D experiment_branch) and no harm is done to the main codebase. This encourages innovation and reduces risk.</li>
+<li>Synching Vs Asynching:</li>
 <li>
-<p>In the text editor, write some texts 7. <code>Ctrl+X</code> and press Y</p>
+<ul>
+<li>Head: A pointer to a specific commit (a snapshot of your code).</li>
+</ul>
 </li>
 <li>
-<p>Initialize your git repository</p>
-</li>
-</ol>
-<pre><code class="language-bash">git init
-</code></pre>
-<hr />
-<p>By this step, you have succesfully initialized a git repo</p>
-<h2 id="spoonfeed-git-changes">Spoonfeed git changes</h2>
-<p>Git doesn’t automatically track changes in your files. You need to tell Git when a file is added, modified, or deleted.</p>
-<p>Files that Git doesn’t know about are called untracked files.</p>
-<p>Untracked files aren’t included in commits, and Git won’t keep a history of them until you explicitly add them.</p>
-<p>If an untracked file is deleted before being added, Git cannot recover it.</p>
-<p>Tip: Always use git status to see which files are untracked, modified, or staged for commit.</p>
-<h3 id="untracked-files-are-in-red">Untracked files are in red:</h3>
-<p><img alt="Git Workflow" src="../images/untrackedFile.png" /></p>
-<h2 id="adding-git-files">Adding git files</h2>
-<p>This is adding untracked files.</p>
-<pre><code class="language-bash">git add filename.txt
-</code></pre>
-<p><strong><em>Here, the files are transformed from unstaging areas to staging area.</em></strong></p>
-<p>If you have mutilple untracked files, then you can track it all at once.</p>
-<pre><code class="language-bash">git add .
-</code></pre>
-<h2 id="git-status">Git Status</h2>
-<p>To check the status of git:</p>
-<pre><code class="language-bash">git status
-</code></pre>
-<p><img alt="Git Workflow" src="../images/trackedFile.png" /></p>
-<p><span style="color:green">Files that Git already knows about. If changes are staged for commit, they appear in green..</span> </br>
-<span style="color:red">New files Git doesn’t know about yet. These appear in red.</span></p>
-<h2 id="commit-changes">commit changes</h2>
-<p>Commits the staged changes to the repository.
-It basically snapshots your repo at a specific point. In other words, it is recording the changes in the repo.</p>
-<pre><code class="language-bash">git commit
-</code></pre>
-<p>This opens a text editor to type your commit.</p>
-<ol>
-<li>Press I to enable Insert.</li>
-<li>Type your commit message.</li>
-<li>Press Escape key.</li>
-<li>type <code>:wq</code> and press Enter.</li>
-</ol>
-<hr />
-<p>If you are smart then just do: (Quick Commit)</p>
-<pre><code class="language-bash">git commit -m &quot;your commit message&quot;
-</code></pre>
-<h2 id="commit-history">commit history</h2>
-<p>View your commit history.</p>
-<pre><code class="language-bash">git log
-</code></pre>
-<p>This will display commit hash, Author, Date and Commit message.</p>
-<h2 id="summary">Summary</h2>
-<ol>
-<li>
-<p>Create a local repo: <code>git init</code></p>
+<ul>
+<li>Syncing: This means the branches point to the exact same commit, meaning their history is identical at that point.</li>
+</ul>
 </li>
 <li>
-<p>When we create a new file in the repo, git is unaware of it.</p>
+<ul>
+<li>Behind/Ahead: This describes the state of a branch's history relative to another branch.
+    icecream is one commit behind master means the commit that icecream points to is a direct parent of the commit that master points to. To "sync" them, you would need to bring the changes from master into icecream <strong>(usually with a merge or rebase)</strong>.</li>
+</ul>
 </li>
-<li><code>git add filename.extension</code></li>
-<li>Now git is in staging area and git is aware of the file.</li>
-<li><code>git commit -m "commit message"</code></li>
-<li><code>git status</code></li>
-<li><code>git log</code></li>
-</ol>
+</ul>
 
 
 

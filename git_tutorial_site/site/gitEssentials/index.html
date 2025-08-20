@@ -22,7 +22,7 @@
     
     
       
-        <title>Git Essentials - Git  Notes</title>
+        <title>Git Essentials- reset, revert - Git  Notes</title>
       
     
     
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git Essentials
+              Git Essentials- reset, revert
             
           </span>
         </div>
@@ -326,7 +326,7 @@
   
   
   <span class="md-ellipsis">
-    Git Essentials
+    Git Essentials- reset, revert
     
   </span>
   
@@ -351,18 +351,87 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branches
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branches
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../branching/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Branching
+    Intro to Branching
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchDiagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Branches In Depth
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -719,10 +788,38 @@
 
 
 <h1 id="git-reset">git reset</h1>
+<p>Using <code>git reset</code> you can:</p>
 <ul>
 <li>unstage files</li>
 <li>undo commits</li>
 <li>delete commits</li>
+</ul>
+<p>The modes of <code>git reset</code> are:</p>
+<ul>
+<li>soft, mixed, hard</li>
+</ul>
+<pre><code class="language-bash"># bring the file to staging area
+git reset --soft commitHash
+</code></pre>
+<pre><code class="language-bash"># bring the file to unstaging area
+git reset --mixed commitHash
+</code></pre>
+<pre><code class="language-bash"># deletes the file. DANGEROUSS
+git reset --hard commitHash
+</code></pre>
+<h1 id="git-revert">git revert</h1>
+<pre><code class="language-bash">git revert commitHash
+</code></pre>
+<h3 id="soo-what-is-the-difference-between-git-revert-and-git-reset-hard">Soo, what is the difference between <code>git revert</code> and <code>git reset --hard</code></h3>
+<ul>
+<li><code>git revert</code>- undos safely, creates a new commit
+  you can recheck the old content using
+  <code>git checkout hash</code></li>
+</ul>
+<hr />
+<ul>
+<li><code>git reset --hard</code> - deletes history, dangerous
+  you cannot recheck teh old content ones deleted <code>:(</code></li>
 </ul>
 
 

@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../branching/">
+        <link rel="prev" href="../branchDiagram/">
       
       
         <link rel="next" href="../remotes/">
@@ -70,6 +70,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#git-merge" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -310,7 +315,7 @@
   
   
   <span class="md-ellipsis">
-    Git Essentials
+    Git Essentials- reset, revert
     
   </span>
   
@@ -334,18 +339,87 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branches
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branches
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../branching/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Branching
+    Intro to Branching
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchDiagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Branches In Depth
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -363,6 +437,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Merging
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -375,6 +464,49 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-merge_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      git merge
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="git merge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -692,6 +824,40 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-merge_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      git merge
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="git merge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -707,9 +873,36 @@
 
 
 
-  <h1>Merging</h1>
-
-
+<h1 id="git-merge">Git Merge</h1>
+<p><code>git merge</code> is used to combine changes from one branch into another.</p>
+<h2 id="git-merge_1">git merge</h2>
+<pre><code class="language-bash">git merge &lt;branch-name&gt;
+</code></pre>
+<h3 id="example">Example</h3>
+<p>Suppose you are on <code>main</code> and want to merge a feature branch called <code>feature1</code>:</p>
+<pre><code class="language-bash">git checkout main      # Make sure you are on the branch you want to merge into
+git merge feature1     # Merge changes from feature1 into main
+</code></pre>
+<ul>
+<li>If there are no conflicts, Git will automatically merge the changes.</li>
+<li>If conflicts exist, Git will prompt you to resolve them manually.</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>Git combines changes from both branches since they split from a common ancestor.</p>
+</li>
+<li>
+<p>Any new files in the branch being merged that aren’t in your current branch will be added.</p>
+</li>
+<li>
+<p>Any changes to existing files in the merged branch will be applied to your current branch.</p>
+</li>
+<li>
+<p>If both branches changed the same part of a file, Git will ask you to resolve a merge conflict.</p>
+</li>
+</ul>
+<hr />
 
 
 

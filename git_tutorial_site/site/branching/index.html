@@ -14,7 +14,7 @@
         <link rel="prev" href="../gitEssentials/">
       
       
-        <link rel="next" href="../merging/">
+        <link rel="next" href="../branchDiagram/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Branching - Git  Notes</title>
+        <title>Intro to Branching - Git  Notes</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#what-are-the-purpose-of-branches" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Branching
+              Intro to Branching
             
           </span>
         </div>
@@ -310,7 +315,7 @@
   
   
   <span class="md-ellipsis">
-    Git Essentials
+    Git Essentials- reset, revert
     
   </span>
   
@@ -336,23 +341,142 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branches
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branches
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Intro to Branching
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Branching
+    Intro to Branching
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-purpose-of-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      what are the purpose of branches?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      commands
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchDiagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Branches In Depth
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -693,6 +817,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-purpose-of-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      what are the purpose of branches?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      commands
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -707,9 +857,48 @@
 
 
 
-  <h1>Branching</h1>
+  <h1>Intro to Branching</h1>
 
-
+<h2 id="what-are-the-purpose-of-branches">what are the purpose of branches?</h2>
+<ul>
+<li>Branches let you work on new features, fixes, or experiments independently without affecting the main code. They also make collaboration and version management easier by keeping changes organized and separate until ready to merge</li>
+</ul>
+<p><img alt="Git Workflow" src="../images/branches1.jpeg" /></p>
+<p><img alt="Git Workflow" src="../images/branches2.jpeg" /></p>
+<ul>
+<li>branch icecream and cake are not syncing because they have diff heads.</li>
+<li>branch cake and master are syncing because they have the same head.</li>
+<li>icecream branch is one commit behind master.</li>
+</ul>
+<h2 id="commands">commands</h2>
+<ul>
+<li>Check local branches</li>
+</ul>
+<pre><code class="language-bash"># info about LOCAL branches
+git branch
+</code></pre>
+<ul>
+<li>Create a branch</li>
+</ul>
+<pre><code class="language-bash"># create a local branch
+git branch branchname
+</code></pre>
+<p>Notes: both the main and jamisha branch are in the same head. Hence, they are syncing</p>
+<p><img alt="Git Workflow" src="../images/branchSync.png" /></p>
+<ul>
+<li>change branch</li>
+</ul>
+<pre><code class="language-bash"># create a local branch
+git checkout branchname
+</code></pre>
+<p>now since we are in another branch named jamisha. If we commit changes then it wont commit to any other branches.</p>
+<p>main is one commit away from jamisha branch. They are not syncing
+<img alt="Git Workflow" src="../images/branchAsync.png" /></p>
+<ul>
+<li>delete branches</li>
+</ul>
+<pre><code class="language-bash">git branch -d branchname
+</code></pre>
 
 
 
