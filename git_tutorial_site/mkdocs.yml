@@ -21,6 +21,7 @@ nav:
   - Merging:
       - Intro to Merging: merging.md
       - Resolving Merge conflicts: mergeConflicts.md
-  - Cherry Pick:
-  - Remotes: remotes.md
+  - Cherry Pick: git_cherrypick.md
+  - Remote Repo: remotes.md
+  - GitLab: gitLab.md
   - Rebasing: rebasing.md
