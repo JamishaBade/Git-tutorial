@@ -23,5 +23,6 @@ nav:
       - Resolving Merge conflicts: mergeConflicts.md
   - Cherry Pick: git_cherrypick.md
   - Remote Repo: remotes.md
+  - Git Stash: gitStash.md
   - GitLab: gitLab.md
   - Rebasing: rebasing.md
