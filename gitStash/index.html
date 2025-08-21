@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../git_cherrypick/">
       
       
-        <link rel="next" href="../DiveDeeperIntoBasics/">
+        <link rel="next" href="../gitIgnore/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Introduction - Git Notes</title>
+        <title>Git Stash - Git Notes</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git-introduction" class="md-skip">
+        <a href="#git-stash-essential-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Git Stash
             
           </span>
         </div>
@@ -280,8 +280,6 @@
       
   
   
-    
-  
   
   
     
@@ -294,11 +292,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -314,7 +314,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Git Basics
@@ -325,32 +325,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
         
   
   
@@ -361,146 +339,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Git?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Git Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#on-macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      On macOS
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-personal-info-to-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Personal Info to Git
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spoonfeed-git-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spoonfeed git changes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Spoonfeed git changes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#untracked-files-are-in-red" class="md-nav__link">
-    <span class="md-ellipsis">
-      Untracked files are in red:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-git-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding git files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Status
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit changes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-history" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit history
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -759,8 +597,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -771,13 +611,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -793,7 +631,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Advanced Topics
@@ -827,10 +665,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../gitStash/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Git Stash
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -841,6 +701,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#save-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save Work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      View &amp; Restore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clean-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clean Up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1023,120 +939,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-git" class="md-nav__link">
+  <a href="#save-work" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Git?
+      Save Work
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#git-installation" class="md-nav__link">
+  <a href="#view-restore" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Git Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#on-macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      On macOS
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-personal-info-to-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Personal Info to Git
+      View &amp; Restore
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
+  <a href="#clean-up" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Commands
+      Clean Up
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#spoonfeed-git-changes" class="md-nav__link">
+  <a href="#advanced" class="md-nav__link">
     <span class="md-ellipsis">
-      Spoonfeed git changes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Spoonfeed git changes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#untracked-files-are-in-red" class="md-nav__link">
-    <span class="md-ellipsis">
-      Untracked files are in red:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-git-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding git files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Status
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit changes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-history" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit history
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
+      Advanced
     </span>
   </a>
   
@@ -1158,117 +990,25 @@
 
 
 
-<h1 id="git-introduction">Git Introduction</h1>
-<h2 id="what-is-git">What is Git?</h2>
-<p>Git is a distributed version control system. It helps to track changes in files, typically source code. It allows to collaborate with group of people without overwriting eachother's work.</p>
-<h2 id="git-installation">Git Installation</h2>
-<h3 id="on-macos">On macOS</h3>
-<p>Git comes bundled with the <strong>Command Line Tools for Xcode</strong>. To check if it’s installed, open Terminal and type:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>--version
+<h1 id="git-stash-essential-commands"><strong>Git Stash: Essential Commands</strong></h1>
+<p>git stash is a command that temporarily shelves (saves) the changes you're currently working on. It lets you quickly clean up your workspace without having to make a permanent commit, so you can switch to another task. When you're ready, you can "unpause" and get your changes back exactly as you left them.</p>
+<h4 id="save-work"><strong>Save Work</strong></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w">                      </span><span class="c1"># Shelve all current changes</span>
+git<span class="w"> </span>stash<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;message&quot;</span><span class="w">         </span><span class="c1"># Shelve with a description</span>
 </code></pre></div>
-<p>or</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>-v
+<h4 id="view-restore"><strong>View &amp; Restore</strong></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>list<span class="w">                 </span><span class="c1"># Show all shelved items</span>
+git<span class="w"> </span>stash<span class="w"> </span>pop<span class="w">                  </span><span class="c1"># Restore latest &amp; remove from shelf</span>
+git<span class="w"> </span>stash<span class="w"> </span>apply<span class="w">                </span><span class="c1"># Restore latest but keep on shelf</span>
 </code></pre></div>
-<h2 id="setting-personal-info-to-git">Setting Personal Info to Git</h2>
-<p>Git requires you to set your name and email before you start committing changes. This information is stored in your commits.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;yourusername&quot;</span>
+<h4 id="clean-up"><strong>Clean Up</strong></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>drop<span class="w">                 </span><span class="c1"># Discard latest shelved item</span>
+git<span class="w"> </span>stash<span class="w"> </span>clear<span class="w">                </span><span class="c1"># Empty entire shelf</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;youremail@example.com&quot;</span>
+<h4 id="advanced"><strong>Advanced</strong></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w"> </span>--keep-index<span class="w">         </span><span class="c1"># Shelve but keep staged files</span>
+git<span class="w"> </span>stash<span class="w"> </span>--include-untracked<span class="w">  </span><span class="c1"># Shelve including new files</span>
 </code></pre></div>
-<h2 id="basic-commands">Basic Commands</h2>
-<p>follow along step by step:</p>
-<ol>
-<li>Create a folder/ directory called <code>git_module</code></li>
-</ol>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>git_module
-<span class="nb">cd</span><span class="w"> </span>git_module
-</code></pre></div>
-<ol>
-<li>Create a subfolder called <code>first_app</code></li>
-</ol>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>first_app
-<span class="nb">cd</span><span class="w"> </span>first_app
-</code></pre></div>
-<ol>
-<li>list files in the directory</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="w">  </span>ls<span class="w"> </span>-l
-</code></pre></div>
-<ol>
-<li>Create a new file in the directory.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="w"> </span>nano<span class="w"> </span>file1.txt
-</code></pre></div>
-<ol>
-<li>
-<p>In the text editor, write some texts 7. <code>Ctrl+X</code> and press Y</p>
-</li>
-<li>
-<p>Initialize your git repository</p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>init
-</code></pre></div>
-<hr />
-<p>By this step, you have succesfully initialized a git repo</p>
-<h2 id="spoonfeed-git-changes">Spoonfeed git changes</h2>
-<p>Git doesn’t automatically track changes in your files. You need to tell Git when a file is added, modified, or deleted.</p>
-<p>Files that Git doesn’t know about are called untracked files.</p>
-<p>Untracked files aren’t included in commits, and Git won’t keep a history of them until you explicitly add them.</p>
-<p>If an untracked file is deleted before being added, Git cannot recover it.</p>
-<p>Tip: Always use git status to see which files are untracked, modified, or staged for commit.</p>
-<h3 id="untracked-files-are-in-red">Untracked files are in red:</h3>
-<p><img alt="Git Workflow" src="../images/untrackedFile.png" /></p>
-<h2 id="adding-git-files">Adding git files</h2>
-<p>This is adding untracked files.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>filename.txt
-</code></pre></div>
-<p><strong><em>Here, the files are transformed from unstaging areas to staging area.</em></strong></p>
-<p>If you have mutilple untracked files, then you can track it all at once.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-</code></pre></div>
-<h2 id="git-status">Git Status</h2>
-<p>To check the status of git:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
-</code></pre></div>
-<p><img alt="Git Workflow" src="../images/trackedFile.png" /></p>
-<p><span style="color:green">Files that Git already knows about. If changes are staged for commit, they appear in green..</span> </br>
-<span style="color:red">New files Git doesn’t know about yet. These appear in red.</span></p>
-<h2 id="commit-changes">commit changes</h2>
-<p>Commits the staged changes to the repository.
-It basically snapshots your repo at a specific point. In other words, it is recording the changes in the repo.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit
-</code></pre></div>
-<p>This opens a text editor to type your commit.</p>
-<ol>
-<li>Press I to enable Insert.</li>
-<li>Type your commit message.</li>
-<li>Press Escape key.</li>
-<li>type <code>:wq</code> and press Enter.</li>
-</ol>
-<hr />
-<p>If you are smart then just do: (Quick Commit)</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;your commit message&quot;</span>
-</code></pre></div>
-<h2 id="commit-history">commit history</h2>
-<p>View your commit history.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log
-</code></pre></div>
-<p>This will display commit hash, Author, Date and Commit message.</p>
-<h2 id="summary">Summary</h2>
-<ol>
-<li>
-<p>Create a local repo: <code>git init</code></p>
-</li>
-<li>
-<p>When we create a new file in the repo, git is unaware of it.</p>
-</li>
-<li><code>git add filename.extension</code></li>
-<li>Now git is in staging area and git is aware of the file.</li>
-<li><code>git commit -m "commit message"</code></li>
-<li><code>git status</code></li>
-<li><code>git log</code></li>
-</ol>
 
 
 

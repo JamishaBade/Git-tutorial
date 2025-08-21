@@ -1,0 +1,70 @@
+/* Custom styling for a more lively site */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #3949AB;
+  --md-primary-fg-color--light: #7986CB;
+  --md-primary-fg-color--dark: #303F9F;
+  --md-accent-fg-color: #448AFF;
+}
+
+/* Make code blocks more appealing */
+.highlight code {
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+/* Custom callout boxes */
+.custom-note {
+  border-left: 4px solid #3f54d9;
+  background-color: #E8EAF6;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.custom-tip {
+  border-left: 4px solid #2ed533;
+  background-color: #E8F5E9;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.custom-warning {
+  border-left: 4px solid #ffa010;
+  background-color: #FFF3E0;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Add some fun hover effects */
+.md-nav__link:hover {
+  color: #448AFF;
+}
+
+/* Style the sidebar */
+.md-sidebar {
+  background-color: #f8f9fa;
+}
+
+/* GitHub icon styling */
+.md-header__source {
+  background-color: #24292e !important;
+}
+
+.md-header__source:hover {
+  background-color: #2ea44f !important;
+}
+
+/* Make GitHub icon in header more visible */
+.md-header__button.md-icon img,
+.md-header__button.md-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.md-header__button.md-icon:hover {
+  transform: scale(1.5);
+  transition: transform 0.2s ease;
+}
+

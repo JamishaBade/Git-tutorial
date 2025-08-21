@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../merging/">
       
       
-        <link rel="next" href="../DiveDeeperIntoBasics/">
+        <link rel="next" href="../git_cherrypick/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Introduction - Git Notes</title>
+        <title>Resolving Conflicts - Git Notes</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git-introduction" class="md-skip">
+        <a href="#git-merge-conflicts" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Resolving Conflicts
             
           </span>
         </div>
@@ -280,8 +280,6 @@
       
   
   
-    
-  
   
   
     
@@ -294,11 +292,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -314,7 +314,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Git Basics
@@ -325,32 +325,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
         
   
   
@@ -361,146 +339,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Git?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Git Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#on-macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      On macOS
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-personal-info-to-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Personal Info to Git
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spoonfeed-git-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spoonfeed git changes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Spoonfeed git changes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#untracked-files-are-in-red" class="md-nav__link">
-    <span class="md-ellipsis">
-      Untracked files are in red:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-git-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding git files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Status
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit changes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-history" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit history
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -661,8 +499,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -673,13 +513,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -695,7 +533,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Merging
@@ -729,10 +567,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../mergeConflicts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Resolving Conflicts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -743,6 +601,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-merge-conflicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Merge Conflicts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Merge Conflicts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-what-is-a-merge-conflict" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is a Merge Conflict?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-when-do-conflicts-happen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. When Do Conflicts Happen?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-the-root-cause-divergent-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. The Root Cause: Divergent Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-anatomy-of-a-conflict-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Anatomy of a Conflict Marker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-youll-see-in-the-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You'll See in the File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-fix-it-4-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Fix It: 4 Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1013,8 +967,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1023,28 +975,73 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-git" class="md-nav__link">
+  <a href="#git-merge-conflicts" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Git?
+      Git Merge Conflicts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Merge Conflicts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-what-is-a-merge-conflict" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is a Merge Conflict?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#git-installation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-when-do-conflicts-happen" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Installation
+      2. When Do Conflicts Happen?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Git Installation">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#on-macos" class="md-nav__link">
+  <a href="#3-the-root-cause-divergent-changes" class="md-nav__link">
     <span class="md-ellipsis">
-      On macOS
+      3. The Root Cause: Divergent Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-anatomy-of-a-conflict-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Anatomy of a Conflict Marker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-youll-see-in-the-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You'll See in the File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-fix-it-4-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Fix It: 4 Steps
     </span>
   </a>
   
@@ -1052,93 +1049,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-personal-info-to-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Personal Info to Git
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#spoonfeed-git-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spoonfeed git changes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Spoonfeed git changes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#untracked-files-are-in-red" class="md-nav__link">
-    <span class="md-ellipsis">
-      Untracked files are in red:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-git-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding git files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Status
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit changes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-history" class="md-nav__link">
-    <span class="md-ellipsis">
-      commit history
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
   
 </li>
       
@@ -1158,117 +1068,92 @@
 
 
 
-<h1 id="git-introduction">Git Introduction</h1>
-<h2 id="what-is-git">What is Git?</h2>
-<p>Git is a distributed version control system. It helps to track changes in files, typically source code. It allows to collaborate with group of people without overwriting eachother's work.</p>
-<h2 id="git-installation">Git Installation</h2>
-<h3 id="on-macos">On macOS</h3>
-<p>Git comes bundled with the <strong>Command Line Tools for Xcode</strong>. To check if it’s installed, open Terminal and type:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>--version
-</code></pre></div>
-<p>or</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>-v
-</code></pre></div>
-<h2 id="setting-personal-info-to-git">Setting Personal Info to Git</h2>
-<p>Git requires you to set your name and email before you start committing changes. This information is stored in your commits.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;yourusername&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;youremail@example.com&quot;</span>
-</code></pre></div>
-<h2 id="basic-commands">Basic Commands</h2>
-<p>follow along step by step:</p>
+  <h1>Resolving Conflicts</h1>
+
+<h3 id="git-merge-conflicts"><strong>Git Merge Conflicts</strong></h3>
+<h4 id="1-what-is-a-merge-conflict"><strong>1. What is a Merge Conflict?</strong></h4>
+<p>A merge conflict is an event that occurs when Git cannot automatically reconcile the changes from two different branches. It is not an error or a failure of Git; it is a <strong>logical inevitability</strong> when concurrent, incompatible changes are made to the same parts of a file.</p>
+<p>Git's automatic merging is excellent for combining changes that don't touch the same lines (e.g., you change function <code>A</code> and I change function <code>B</code>). A conflict arises when this is not the case.</p>
+<h4 id="2-when-do-conflicts-happen"><strong>2. When Do Conflicts Happen?</strong></h4>
+<p>Conflicts occur during operations that combine history:</p>
+<ul>
+<li><code>git merge</code></li>
+<li><code>git rebase</code></li>
+<li><code>git cherry-pick</code></li>
+<li><code>git pull</code> (which is essentially <code>fetch</code> + <code>merge</code>)</li>
+</ul>
+<h4 id="3-the-root-cause-divergent-changes"><strong>3. The Root Cause: Divergent Changes</strong></h4>
+<p>A conflict requires <strong>two</strong> conditions to be true simultaneously:</p>
 <ol>
-<li>Create a folder/ directory called <code>git_module</code></li>
+<li><strong>The same file</strong> was changed in both branches.</li>
+<li><strong>The same part(s) of that file</strong> were changed in different ways.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>git_module
-<span class="nb">cd</span><span class="w"> </span>git_module
-</code></pre></div>
+<p><strong>Example Scenario:</strong></p>
 <ol>
-<li>Create a subfolder called <code>first_app</code></li>
+<li>Branch <code>main</code> has a line: <code>favorite_ice_cream = "vanilla"</code></li>
+<li>You branch off to <code>feature/cake</code> and change it to: <code>favorite_dessert = "chocolate cake"</code></li>
+<li>Someone else on <code>main</code> changes it to: <code>favorite_ice_cream = "pistachio"</code></li>
+<li>Attempting to merge <code>feature/cake</code> into <code>main</code> will cause a conflict. Git doesn't know which variable name (<code>favorite_ice_cream</code> vs. <code>favorite_dessert</code>) <em>or</em> which value (<code>"pistachio"</code> vs. <code>"chocolate cake"</code>) to choose. This requires human judgment.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>first_app
-<span class="nb">cd</span><span class="w"> </span>first_app
+<h4 id="4-anatomy-of-a-conflict-marker"><strong>4. Anatomy of a Conflict Marker</strong></h4>
+<p>When a conflict occurs, Git modifies the file in your working directory to show you the conflicting sections. It uses a specific syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">HEAD</span>
+<span class="n">This</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">change</span> <span class="n">that</span> <span class="ow">is</span> <span class="n">currently</span> <span class="n">on</span> <span class="n">your</span> <span class="n">branch</span> <span class="p">(</span><span class="n">the</span> <span class="n">one</span> <span class="n">you</span> <span class="n">are</span> <span class="n">on</span><span class="p">)</span><span class="o">.</span>
+<span class="o">=======</span>
+<span class="n">This</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">change</span> <span class="n">that</span> <span class="ow">is</span> <span class="n">coming</span> <span class="kn">from</span><span class="w"> </span><span class="nn">the</span> <span class="n">branch</span> <span class="n">you</span> <span class="n">are</span> <span class="n">merging</span> <span class="ow">in</span><span class="o">.</span>
+<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="n">branch</span><span class="o">-</span><span class="n">being</span><span class="o">-</span><span class="n">merged</span>
 </code></pre></div>
-<ol>
-<li>list files in the directory</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="w">  </span>ls<span class="w"> </span>-l
-</code></pre></div>
-<ol>
-<li>Create a new file in the directory.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="w"> </span>nano<span class="w"> </span>file1.txt
-</code></pre></div>
-<ol>
-<li>
-<p>In the text editor, write some texts 7. <code>Ctrl+X</code> and press Y</p>
-</li>
-<li>
-<p>Initialize your git repository</p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>init
-</code></pre></div>
+<ul>
+<li><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>: Marks the <strong>start</strong> of the conflicting changes from your current branch.</li>
+<li><code>=======</code>: The <strong>divider</strong> between the two conflicting sets of changes.</li>
+<li><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name</code>: Marks the <strong>end</strong> of the conflicting changes from the incoming branch.</li>
+</ul>
+<h4 id="what-happens"><strong>What Happens?</strong></h4>
+<p>Git can't automatically combine changes from two branches because they edited the same part of the same file. It asks you to decide what the final code should be.</p>
 <hr />
-<p>By this step, you have succesfully initialized a git repo</p>
-<h2 id="spoonfeed-git-changes">Spoonfeed git changes</h2>
-<p>Git doesn’t automatically track changes in your files. You need to tell Git when a file is added, modified, or deleted.</p>
-<p>Files that Git doesn’t know about are called untracked files.</p>
-<p>Untracked files aren’t included in commits, and Git won’t keep a history of them until you explicitly add them.</p>
-<p>If an untracked file is deleted before being added, Git cannot recover it.</p>
-<p>Tip: Always use git status to see which files are untracked, modified, or staged for commit.</p>
-<h3 id="untracked-files-are-in-red">Untracked files are in red:</h3>
-<p><img alt="Git Workflow" src="../images/untrackedFile.png" /></p>
-<h2 id="adding-git-files">Adding git files</h2>
-<p>This is adding untracked files.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>filename.txt
+<h4 id="what-youll-see-in-the-file"><strong>What You'll See in the File</strong></h4>
+<p>Git adds markers to show the conflict:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">HEAD</span>
+<span class="n">Your</span> <span class="n">changes</span> <span class="p">(</span><span class="kn">from</span><span class="w"> </span><span class="nn">your</span> <span class="n">current</span> <span class="n">branch</span><span class="p">)</span>
+<span class="o">=======</span>
+<span class="n">Incoming</span> <span class="n">changes</span> <span class="p">(</span><span class="kn">from</span><span class="w"> </span><span class="nn">the</span> <span class="n">branch</span> <span class="n">you</span><span class="s1">&#39;re merging)</span>
+<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="n">branch</span><span class="o">-</span><span class="n">name</span>
 </code></pre></div>
-<p><strong><em>Here, the files are transformed from unstaging areas to staging area.</em></strong></p>
-<p>If you have mutilple untracked files, then you can track it all at once.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-</code></pre></div>
-<h2 id="git-status">Git Status</h2>
-<p>To check the status of git:</p>
+<ul>
+<li><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code> to <code>=======</code> is <strong>your code</strong>.</li>
+<li><code>=======</code> to <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name</code> is <strong>their code</strong>.</li>
+</ul>
+<hr />
+<h4 id="how-to-fix-it-4-steps"><strong>How to Fix It: 4 Steps</strong></h4>
+<ol>
+<li>
+<p><strong>Find the conflicts:</strong></p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
 </code></pre></div>
-<p><img alt="Git Workflow" src="../images/trackedFile.png" /></p>
-<p><span style="color:green">Files that Git already knows about. If changes are staged for commit, they appear in green..</span> </br>
-<span style="color:red">New files Git doesn’t know about yet. These appear in red.</span></p>
-<h2 id="commit-changes">commit changes</h2>
-<p>Commits the staged changes to the repository.
-It basically snapshots your repo at a specific point. In other words, it is recording the changes in the repo.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit
-</code></pre></div>
-<p>This opens a text editor to type your commit.</p>
-<ol>
-<li>Press I to enable Insert.</li>
-<li>Type your commit message.</li>
-<li>Press Escape key.</li>
-<li>type <code>:wq</code> and press Enter.</li>
+<p><em>Look for "Unmerged paths".</em></p>
+</li>
+<li>
+<p><strong>Open the file</strong> and find the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> markers.</p>
+</li>
+<li>
+<p><strong>Edit the file</strong> to choose the correct code. You can:</p>
+<ul>
+<li>Keep only your code</li>
+<li>Keep only their code</li>
+<li>Mix them together</li>
+<li>Write something new</li>
+<li><strong>Delete all the conflict markers (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>)</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Finish up:</strong>
+    <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>&lt;file&gt;<span class="w">  </span><span class="c1"># Mark this file as fixed</span>
+git<span class="w"> </span>commit<span class="w">      </span><span class="c1"># Finalize the merge</span>
+</code></pre></div></p>
+</li>
+<li>Commit the changes</li>
 </ol>
 <hr />
-<p>If you are smart then just do: (Quick Commit)</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;your commit message&quot;</span>
-</code></pre></div>
-<h2 id="commit-history">commit history</h2>
-<p>View your commit history.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log
-</code></pre></div>
-<p>This will display commit hash, Author, Date and Commit message.</p>
-<h2 id="summary">Summary</h2>
-<ol>
-<li>
-<p>Create a local repo: <code>git init</code></p>
-</li>
-<li>
-<p>When we create a new file in the repo, git is unaware of it.</p>
-</li>
-<li><code>git add filename.extension</code></li>
-<li>Now git is in staging area and git is aware of the file.</li>
-<li><code>git commit -m "commit message"</code></li>
-<li><code>git status</code></li>
-<li><code>git log</code></li>
-</ol>
 
 
 
