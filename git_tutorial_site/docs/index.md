@@ -2,6 +2,8 @@
 
 ## Welcome to **Git Notes & Reference**!
 
+Helloo, <br>
+
 This website is designed to help me **take notes, reference, and learn Git and GitHub** efficiently.  
 It’s also open for **anyone else who wants to learn Git** or use it to take as a reference.
 

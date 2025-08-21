@@ -1,29 +1,147 @@
-site_name: Git  Notes
-site_description: My organized notes for Git
+# site_name: Git  Notes
+# site_description: My organized notes for Git
+# theme:
+#   name: material
+#   palette:
+#     primary: brown
+#     accent: grey
+#   font:
+#     text: Roboto
+#     code: Roboto Mono
+
+# nav:
+#   - Home: index.md
+#   - Git Basics:
+#       - Introduction: Introduction.md
+#       - DiveDeeper: DiveDeeperIntoBasics.md
+#       - Git Essentials- reset, revert: gitEssentials.md
+#   - Branches:
+#       - Intro to Branching: branching.md
+#       - Branches In Depth: branchDiagram.md
+#   - Merging:
+#       - Intro to Merging: merging.md
+#       - Resolving Merge conflicts: mergeConflicts.md
+#   - Cherry Pick: git_cherrypick.md
+#   - Remote Repo: remotes.md
+#   - Git Stash: gitStash.md
+#   - GitLab and GitHub: gitLab.md
+#   - Git Ignore: gitIgnore.md
+#   - TLDR: gitCommands.md
+
+site_name: Git Notes
+site_description: My organized notes for Git - by a student, for students!
+
 theme:
   name: material
   palette:
-    primary: brown
-    accent: grey
+    primary: indigo
+    accent: blue
   font:
     text: Roboto
     code: Roboto Mono
+  features:
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
 
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
   - Git Basics:
       - Introduction: Introduction.md
-      - DiveDeeper: DiveDeeperIntoBasics.md
-      - Git Essentials- reset, revert: gitEssentials.md
+      - Dive Deeper: DiveDeeperIntoBasics.md
+      - Git Essentials: gitEssentials.md
   - Branches:
       - Intro to Branching: branching.md
       - Branches In Depth: branchDiagram.md
   - Merging:
       - Intro to Merging: merging.md
-      - Resolving Merge conflicts: mergeConflicts.md
-  - Cherry Pick: git_cherrypick.md
-  - Remote Repo: remotes.md
-  - Git Stash: gitStash.md
-  - GitLab and GitHub: gitLab.md
-  - Git Ignore: gitIgnore.md
-  - TLDR: gitCommands.md
+      - Resolving Conflicts: mergeConflicts.md
+  - Advanced Topics:
+      - Cherry Pick: git_cherrypick.md
+      - Git Stash: gitStash.md
+      - Git Ignore: gitIgnore.md
+  - Collaboration:
+      - Remote Repositories: remotes.md
+      - GitLab and GitHub: gitLab.md
+  - Quick Reference: gitCommands.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/JamishaBade
+      name: GitHub
+    - icon: fontawesome/brands/linkedIn
+      link: https://www.linkedin.com/in/jamishabade/
+      name: LinkedIn
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: |
+  &copy; 2025 Jamisha Bade
+
+# site_name: Git Notes
+# site_description: My organized notes for Git - made by a student for students!
+
+# theme:
+#   name: material
+#   palette:
+#     primary: indigo
+#     accent: blue
+#   font:
+#     text: Roboto
+#     code: Roboto Mono
+#   features:
+#     - navigation.sections
+#     - navigation.expand
+#     - search.suggest
+#     - search.highlight
+
+# nav:
+#   - Home: index.md
+#   - Git Basics:
+#       - Introduction: Introduction.md
+#       - Dive Deeper: DiveDeeperIntoBasics.md
+#       - Git Essentials: gitEssentials.md
+#   - Branches:
+#       - Intro to Branching: branching.md
+#       - Branches In Depth: branchDiagram.md
+#   - Merging:
+#       - Intro to Merging: merging.md
+#       - Resolving Conflicts: mergeConflicts.md
+#   - Advanced Topics:
+#       - Cherry Pick: git_cherrypick.md
+#       - Git Stash: gitStash.md
+#       - Git Ignore: gitIgnore.md
+#   - Collaboration:
+#       - Remote Repositories: remotes.md
+#       - GitLab and GitHub: gitLab.md
+#   - Quick Reference: gitCommands.md
+
+# extra_css:
+#   - stylesheets/custom.css
+
+# markdown_extensions:
+#   - admonition
+#   - pymdownx.details
+#   - pymdownx.superfences
+#   - pymdownx.highlight
+#   - pymdownx.inlinehilite
+#   - pymdownx.emoji:
+#       emoji_index: !!python/name:material.extensions.emoji.twemoji
+#       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# copyright: |
+#   &copy; 2025 Jamisha Bade
